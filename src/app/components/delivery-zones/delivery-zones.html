@@ -1,0 +1,54 @@
+<section id="delivery-zones" class="max-w-7xl mx-auto px-5 lg:px-20 py-20 md:py-28">
+    <div class="text-center mb-14 md:mb-20">
+        <span class="text-accent-gold font-bold tracking-[2px] block mb-3 uppercase text-sm">Delivery Coverage</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-primary leading-tight mb-4">
+            Fresh Jain Meals Across East Bangalore
+        </h2>
+        <p class="text-base md:text-lg opacity-70 max-w-2xl mx-auto">
+            From our dedicated pure Jain kitchen in Munnekolala, we deliver hot meals, daily office tiffins, and packed corporate meal boxes to key residential hubs and IT corridors.
+        </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        @for (zone of primaryZones; track zone.name) {
+        <div class="bg-white p-7 md:p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-primary/5 flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fas fa-location-dot text-base"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-serif font-bold text-primary leading-snug">{{ zone.name }}</h3>
+                        <span class="text-[0.65rem] font-bold uppercase tracking-wider text-accent-gold block">{{ zone.highlight }}</span>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-text-charcoal/70 leading-relaxed mb-6">
+                    <strong class="text-primary font-semibold">Key Hubs:</strong> {{ zone.landmarks }}
+                </p>
+            </div>
+            <div class="pt-4 border-t border-primary/5 flex items-center justify-between">
+                <span class="text-xs font-semibold text-primary/80">Daily Delivery</span>
+                <a href="https://wa.me/917259792300?text=Hi,%20I%20would%20like%20to%20order%20food%20to%20{{ zone.name }}" target="_blank"
+                    class="text-accent-gold font-bold text-xs uppercase tracking-wider hover:text-primary transition-colors inline-flex items-center gap-1">
+                    Order Here →
+                </a>
+            </div>
+        </div>
+        }
+    </div>
+
+    <!-- Wide Catering Banner -->
+    <div class="mt-12 bg-primary text-white p-8 md:p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="text-center md:text-left">
+            <span class="text-accent-gold text-xs font-bold uppercase tracking-widest block mb-1">Bangalore-Wide Catering</span>
+            <h3 class="text-2xl md:text-3xl font-serif text-white">Ordering for a House Party, Puja, or Office Event?</h3>
+            <p class="text-white/70 text-sm mt-1 max-w-xl">
+                We cater 100% pure Jain packed meal boxes and buffet setups across all of Bangalore (including Indiranagar, Koramangala, Jayanagar & Malleshwaram) with 24-hour advance booking.
+            </p>
+        </div>
+        <a href="https://wa.me/919875015457?text=Hi,%20I%20am%20inquiring%20about%20catering%20or%20bulk%20meal%20boxes%20in%20Bangalore" target="_blank"
+            class="bg-accent-gold hover:bg-white hover:text-primary text-white px-8 py-3.5 rounded-full font-bold uppercase tracking-wider text-xs whitespace-nowrap transition-all shadow-md shrink-0">
+            Get Catering Quote
+        </a>
+    </div>
+</section>

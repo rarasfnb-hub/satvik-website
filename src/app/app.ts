@@ -7,6 +7,7 @@ import { BenefitsComponent } from './components/benefits/benefits';
 import { MenuComponent } from './components/menu/menu';
 import { SpecialsComponent } from './components/specials/specials';
 import { ServicesComponent } from './components/services/services';
+import { DeliveryZonesComponent } from './components/delivery-zones/delivery-zones';
 import { FooterComponent } from './components/footer/footer';
 
 @Component({
@@ -21,6 +22,7 @@ import { FooterComponent } from './components/footer/footer';
     MenuComponent,
     SpecialsComponent,
     ServicesComponent,
+    DeliveryZonesComponent,
     FooterComponent
   ],
   templateUrl: './app.html',
