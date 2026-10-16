@@ -2,7 +2,7 @@
     <div class="container mx-auto px-5 lg:px-20">
         <nav class="flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="assets/images/satvik-logo.jpg" alt="Satvik Savour Logo" class="h-12 w-auto rounded-full">
+                <img src="assets/images/satvik-logo.webp" alt="Satvik Savour Logo" width="48" height="48" class="h-12 w-12 rounded-full object-cover">
                 <div class="logo-text">
                     <span class="serif text-lg sm:text-xl block leading-none">SATVIK SAVOUR</span>
                     <span
@@ -17,12 +17,58 @@
                 <a href="#menu" class="font-medium hover:text-accent-gold transition-colors">Menu</a>
                 <a href="#contact" class="font-medium hover:text-accent-gold transition-colors">Contact</a>
             </div>
-            <div class="nav-cta shrink-0">
-                <a href="https://wa.me/917259792300?text=Hi, I would like to place an order" target="_blank"
-                    class="bg-accent-gold hover:bg-primary text-white px-4 py-2 sm:px-6 sm:py-2 rounded-full font-bold uppercase tracking-wider text-[0.6rem] sm:text-xs transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-md whitespace-nowrap inline-block">
-                    Order Now
-                </a>
+            <div class="flex items-center gap-3">
+                <div class="nav-cta shrink-0">
+                    <a href="https://wa.me/917259792300?text=Hi, I would like to place an order" target="_blank"
+                        class="bg-accent-gold hover:bg-primary text-white px-3.5 py-1.5 sm:px-6 sm:py-2 rounded-full font-bold uppercase tracking-wider text-[0.65rem] sm:text-xs transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-md whitespace-nowrap inline-block">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Toggle Button -->
+                <button
+                    type="button"
+                    (click)="toggleMobileMenu()"
+                    class="md:hidden flex items-center justify-center w-9 h-9 rounded-full text-primary hover:text-accent-gold hover:bg-primary/5 transition-colors focus:outline-none"
+                    [attr.aria-expanded]="isMobileMenuOpen()"
+                    aria-label="Toggle navigation menu">
+                    @if (!isMobileMenuOpen()) {
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    } @else {
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    }
+                </button>
             </div>
         </nav>
+
+        <!-- Mobile Navigation Menu -->
+        @if (isMobileMenuOpen()) {
+            <div class="md:hidden border-t border-primary/10 mt-3 pt-3 pb-2 flex flex-col gap-1 animate-fade-in bg-bg-cream">
+                <a href="#home" (click)="closeMobileMenu()"
+                    class="font-medium text-sm py-2 px-3 rounded-lg hover:bg-primary/5 hover:text-accent-gold transition-colors">
+                    Home
+                </a>
+                <a href="#services" (click)="closeMobileMenu()"
+                    class="font-medium text-sm py-2 px-3 rounded-lg hover:bg-primary/5 hover:text-accent-gold transition-colors">
+                    Specialized Services
+                </a>
+                <a href="#philosophy" (click)="closeMobileMenu()"
+                    class="font-medium text-sm py-2 px-3 rounded-lg hover:bg-primary/5 hover:text-accent-gold transition-colors">
+                    Our Philosophy
+                </a>
+                <a href="#menu" (click)="closeMobileMenu()"
+                    class="font-medium text-sm py-2 px-3 rounded-lg hover:bg-primary/5 hover:text-accent-gold transition-colors">
+                    Menu Highlights
+                </a>
+                <a href="#contact" (click)="closeMobileMenu()"
+                    class="font-medium text-sm py-2 px-3 rounded-lg hover:bg-primary/5 hover:text-accent-gold transition-colors">
+                    Contact & Location
+                </a>
+            </div>
+        }
     </div>
 </header>

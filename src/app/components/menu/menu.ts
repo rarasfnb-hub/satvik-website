@@ -11,22 +11,22 @@ export class MenuComponent {
     {
       title: 'Premium Jain Thali',
       desc: 'A royal feast featuring delicate curries, fresh rotis, and sweets.',
-      image: 'assets/images/premium-jain-thali.jpg'
+      image: 'assets/images/premium-jain-thali.webp'
     },
     {
       title: 'Dal Bati churma Thali',
       desc: 'Authentic Marwari flavor with slow-baked batis and rich churma.',
-      image: 'assets/images/dal-bati-churma.jpg'
+      image: 'assets/images/dal-bati-churma.webp'
     },
     {
       title: 'Veg Hakka Noodles',
       desc: 'Crispy vegetables and perfectly cooked noodles in a savory Jain sauce.',
-      image: 'assets/images/veg-hakka-noodles.jpg'
+      image: 'assets/images/veg-hakka-noodles.webp'
     },
     {
       title: 'Garden Fresh Pizza',
       desc: 'Thin crust loaded with farm-fresh vegetables and gooey cheese.',
-      image: 'assets/images/garden-fresh-pizza.jpg'
+      image: 'assets/images/garden-fresh-pizza.webp'
     }
   ];
 }

@@ -10,29 +10,58 @@
                 in every bite.</p>
         </div>
         <div class="flex flex-wrap justify-center gap-6 md:gap-12">
-            <div class="avoid-item text-center flex flex-col items-center">
+            <!-- Root Veg -->
+            <div class="avoid-item text-center flex flex-col items-center group">
                 <div
-                    class="relative w-16 md:w-20 h-16 md:h-20 border-2 border-white/20 rounded-full flex items-center justify-center mb-3">
-                    <i class="fas fa-carrot text-white/50 text-2xl md:text-3xl"></i>
-                    <div class="absolute w-4/5 h-0.5 bg-red-500 rotate-[-45deg]"></div>
+                    class="relative w-16 md:w-20 h-16 md:h-20 border-2 border-white/20 rounded-full flex items-center justify-center mb-3 bg-white/5 transition-colors group-hover:border-accent-gold/40">
+                    <svg class="w-8 h-8 md:w-9 md:h-9 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Carrot shape -->
+                        <path d="M15 7.5l-9 9a3.5 3.5 0 0 0 5 5l9-9a3.5 3.5 0 0 0-5-5z" fill="currentColor" fill-opacity="0.3"></path>
+                        <!-- Carrot ridges -->
+                        <path d="M10.5 12l2 2m-3-1l2 2m-3-1l2 2"></path>
+                        <!-- Leaves -->
+                        <path d="M16 8l3-3m-3 0l4 1m-1 3l3-1"></path>
+                    </svg>
+                    <div class="absolute w-4/5 h-0.5 bg-red-500 rotate-[-45deg] shadow-sm"></div>
                 </div>
-                <span class="text-[0.6rem] md:text-[0.7rem] font-bold tracking-widest uppercase">Root Veg</span>
+                <span class="text-[0.65rem] md:text-[0.75rem] font-bold tracking-widest uppercase text-white/90">Root Veg</span>
             </div>
-            <div class="avoid-item text-center flex flex-col items-center">
+
+            <!-- Onion / Garlic -->
+            <div class="avoid-item text-center flex flex-col items-center group">
                 <div
-                    class="relative w-16 md:w-20 h-16 md:h-20 border-2 border-white/20 rounded-full flex items-center justify-center mb-3">
-                    <i class="fas fa-soap text-white/50 text-2xl md:text-3xl"></i>
-                    <div class="absolute w-4/5 h-0.5 bg-red-500 rotate-[-45deg]"></div>
+                    class="relative w-16 md:w-20 h-16 md:h-20 border-2 border-white/20 rounded-full flex items-center justify-center mb-3 bg-white/5 transition-colors group-hover:border-accent-gold/40">
+                    <svg class="w-8 h-8 md:w-9 md:h-9 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Onion bulb outline -->
+                        <path d="M12 2.5C10.5 4.5 5 10 5 15a7 7 0 0 0 14 0c0-5-5.5-10.5-7-12.5z" fill="currentColor" fill-opacity="0.3"></path>
+                        <!-- Inner layers -->
+                        <path d="M12 6c-2 3-4 6-4 9a4 4 0 0 0 8 0c0-3-2-6-4-9z"></path>
+                        <path d="M12 2.5v16.5"></path>
+                        <!-- Root whiskers -->
+                        <path d="M10 22h4"></path>
+                    </svg>
+                    <div class="absolute w-4/5 h-0.5 bg-red-500 rotate-[-45deg] shadow-sm"></div>
                 </div>
-                <span class="text-[0.6rem] md:text-[0.7rem] font-bold tracking-widest uppercase">Onion/Garlic</span>
+                <span class="text-[0.65rem] md:text-[0.75rem] font-bold tracking-widest uppercase text-white/90">Onion / Garlic</span>
             </div>
-            <div class="avoid-item text-center flex flex-col items-center">
+
+            <!-- Mushroom -->
+            <div class="avoid-item text-center flex flex-col items-center group">
                 <div
-                    class="relative w-16 md:w-20 h-16 md:h-20 border-2 border-white/20 rounded-full flex items-center justify-center mb-3">
-                    <i class="fas fa-certificate text-white/50 text-2xl md:text-3xl"></i>
-                    <div class="absolute w-4/5 h-0.5 bg-red-500 rotate-[-45deg]"></div>
+                    class="relative w-16 md:w-20 h-16 md:h-20 border-2 border-white/20 rounded-full flex items-center justify-center mb-3 bg-white/5 transition-colors group-hover:border-accent-gold/40">
+                    <svg class="w-8 h-8 md:w-9 md:h-9 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Mushroom cap -->
+                        <path d="M3 13c0-5 4-9 9-9s9 4 9 9c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1z" fill="currentColor" fill-opacity="0.3"></path>
+                        <!-- Stem -->
+                        <path d="M9.5 14v5.5a2.5 2.5 0 0 0 5 0V14"></path>
+                        <!-- Cap spots -->
+                        <circle cx="8" cy="9" r="1" fill="currentColor"></circle>
+                        <circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"></circle>
+                        <circle cx="12" cy="6" r="0.8" fill="currentColor"></circle>
+                    </svg>
+                    <div class="absolute w-4/5 h-0.5 bg-red-500 rotate-[-45deg] shadow-sm"></div>
                 </div>
-                <span class="text-[0.6rem] md:text-[0.7rem] font-bold tracking-widest uppercase">Mushroom</span>
+                <span class="text-[0.65rem] md:text-[0.75rem] font-bold tracking-widest uppercase text-white/90">Mushroom</span>
             </div>
         </div>
     </div>
